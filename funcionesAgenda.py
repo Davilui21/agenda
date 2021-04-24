@@ -67,7 +67,23 @@ def listar_contacto():
             print("\n\n")
 
 def buscar_contacto():
-    pass
+    while True:
+        try:
+            buscar=input("Ingrese el Nombre-->")
+        except ValueError as error:
+                print("Valor invalido", error)
+        else:
+            if buscar not in contactos:
+                print("ESTE CONTACTO NO EXISTE")
+            else:
+                        print("Nombre:", i["Nombre"])
+                        print("Apellido_P:", i["Apellido_P"])
+                        print("Apellido_M:",i["Apellido_M"])
+                        print("Teléfono_Móvil:",i["Teléfono_Móvil"])
+                        print("Teléfono_Casa:",i["Teléfono_Casa"])
+                        print("Teléfono_Trabajo:",i["Teléfono_Trabajo"])
+                        print("\n\n")
+            break 
 
 def modificar_contacto():
     pass
